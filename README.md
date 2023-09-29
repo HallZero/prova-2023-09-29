@@ -1,5 +1,36 @@
 # prova-2023-09-29
 
+# Criando instâncias EC2
+
+![EC2 Console](./media/EC2-console.png)
+![EC2 Instances](./media/EC2-instances)
+![EC2 Launch Instances](./media/EC2-Launch.png)
+![EC2 Configuring](./media/EC2-config.png)
+![EC2 Network Settings](./media/EC2-Network.png)
+![EC2 Instances Frontend & Backend](./media/EC2-front-back.png)
+
+Entenda aqui a criação análoga do frontend e backend\
+
+## Permissões da instância
+![EC2 Inbound](./media/EC2-Backend-inbound.png)
+# Criando uma instância RDS
+
+![RDS Console](./media/RDS-console.png)
+![RDS Database](./media/RDS-database.png)
+![RDS Config](./media/RDS-config.png)
+![RDS Free Tier](./media/RDS-free-tier.png)
+![RDS Public](./media/RDS-public.png)
+![RDS Monitoring](./media/RDS-Monitoring.png)
+
+![RDS Inbound](./media/RDS-inbound.png)
+
+# Testando a comunicação utilizando DBeaver
+![DBeaver](./media/Dbeaver-connect.png)
+
+## Comandos dentro da Instância Frontend 
+
+Comandos para alocar os arquivos para rodar o frontend utilizando Apache\
+
 ```bash
 
 sudo apt update
@@ -17,5 +48,21 @@ sudo mv ./frontend/script.js /var/www/html
 sudo mv ./frontend/styles.css /var/www/html
 
 sudo rmdir frontend
+```
 
+## Comandos dentro da Instância Backend
+
+```bash
+sudo apt update
+sudo apt upgrade -y
+
+git clone https://github.com/HallZero/prova-2023-09-29.git
+
+sudo apt install python3-pip
+
+cd prova-2023-09-29/backend
+
+python3 criar_banco.py
+
+python3 main.py
 ```
