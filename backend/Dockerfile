@@ -8,4 +8,6 @@ RUN pip install -r requirements.txt
 
 COPY . /app
 
+RUN python criar_banco.py
+
 CMD ["python", "main.py"]
