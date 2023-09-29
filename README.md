@@ -13,6 +13,12 @@ Entenda aqui a criação análoga do frontend e backend\
 
 ## Permissões da instância
 ![EC2 Inbound](./media/EC2-Backend-inbound.png)
+
+## Adicionando IP elástico à instância Backend
+
+![Elastic IP](./media/Elastic-IP.png)
+![Elastic Config](./media/Elastic-config.png)
+Note que o IP associado é o da instância backend!
 # Criando uma instância RDS
 
 ![RDS Console](./media/RDS-console.png)
@@ -66,3 +72,9 @@ python3 criar_banco.py
 
 python3 main.py
 ```
+
+# Alteração no arquivo script.js
+
+Configurei um IP elástico para a instância de EC2 do backend para poder fazer requisições a partir do frontend
+
+![IP Elástico](./media/Scripts-Elastic.png)
