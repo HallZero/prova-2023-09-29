@@ -3,7 +3,7 @@
 # Criando instâncias EC2
 
 ![EC2 Console](./media/EC2-console.png)
-![EC2 Instances](./media/EC2-instances)
+![EC2 Instances](./media/EC2-instances.png)
 ![EC2 Launch Instances](./media/EC2-Launch.png)
 ![EC2 Configuring](./media/EC2-config.png)
 ![EC2 Network Settings](./media/EC2-Network.png)
